@@ -1,4 +1,4 @@
-
+//Polymorphism
 public class Insomnia {
 	private String poses;
 	private String benefits;
@@ -6,7 +6,7 @@ public class Insomnia {
 	    	return poses;   	
 	    }
 	    	
-	 
+	 //getter and setter method
 	    public void setposes(String poses) {
 	    	this.poses = poses;
 	    }

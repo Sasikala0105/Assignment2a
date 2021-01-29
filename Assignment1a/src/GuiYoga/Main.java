@@ -1,10 +1,15 @@
+package GuiYoga;
+
 import java.awt.EventQueue;
+
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.MatteBorder;
 import java.awt.Color;
+import java.awt.Component;
+
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
@@ -76,12 +81,12 @@ public class Main extends JFrame {
 		panel.add(title_1);
 		title_1.setLayout(null);
 		title_1.setBorder(new MatteBorder(10, 10, 10, 10, (Color) new Color(123, 104, 238)));
-		title_1.setBackground(new Color(250, 235, 215));
+		title_1.setBackground(new Color(255, 239, 213));
 		
 		
 		JLabel titleLabel = new JLabel("Customer Registration");
 		titleLabel.setForeground(new Color(0, 0, 0));
-		titleLabel.setBackground(new Color(123, 104, 238));
+		titleLabel.setBackground(new Color(216, 191, 216));
 		titleLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		titleLabel.setFont(new Font("Century Gothic", Font.BOLD, 55));
 		titleLabel.setBounds(262, 11, 748, 63);
@@ -90,7 +95,7 @@ public class Main extends JFrame {
 		JPanel panel_1_1 = new JPanel();
 		panel_1_1.setLayout(null);
 		panel_1_1.setBorder(new MatteBorder(10, 10, 10, 10, (Color) new Color(147, 112, 219)));
-		panel_1_1.setBackground(new Color(154, 205, 50));
+		panel_1_1.setBackground(new Color(216, 191, 216));
 		panel_1_1.setBounds(21, 120, 519, 517);
 		panel.add(panel_1_1);
 		
@@ -98,110 +103,110 @@ public class Main extends JFrame {
 		lblRef.setHorizontalAlignment(SwingConstants.LEFT);
 		lblRef.setForeground(new Color(0, 0, 0));
 		lblRef.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		lblRef.setBounds(31, 45, 140, 27);
+		lblRef.setBounds(17, 45, 140, 27);
 		panel_1_1.add(lblRef);
 		
 		JLabel lblDate = new JLabel("Date Registered");
 		lblDate.setHorizontalAlignment(SwingConstants.LEFT);
 		lblDate.setForeground(new Color(0, 0, 0));
 		lblDate.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		lblDate.setBounds(31, 83, 154, 27);
+		lblDate.setBounds(17, 83, 154, 27);
 		panel_1_1.add(lblDate);
 		
 		JtextMI = new JTextField();
 		JtextMI.setFont(new Font("Bahnschrift", Font.PLAIN, 18));
-		JtextMI.setBounds(281, 458, 199, 26);
+		JtextMI.setBounds(205, 458, 285, 26);
 		panel_1_1.add(JtextMI);
 		JtextMI.setColumns(10);
 		
 		JtextTmonths = new JTextField();
 		JtextTmonths.setFont(new Font("Bahnschrift", Font.PLAIN, 18));
 		JtextTmonths.setColumns(10);
-		JtextTmonths.setBounds(195, 423, 285, 26);
+		JtextTmonths.setBounds(205, 423, 285, 26);
 		panel_1_1.add(JtextTmonths);
 		
 		JtextPrice = new JTextField();
 		JtextPrice.setFont(new Font("Bahnschrift", Font.PLAIN, 18));
 		JtextPrice.setColumns(10);
-		JtextPrice.setBounds(195, 365, 285, 26);
+		JtextPrice.setBounds(205, 366, 285, 26);
 		panel_1_1.add(JtextPrice);
 		
 		JtextContact = new JTextField();
 		JtextContact.setFont(new Font("Bahnschrift", Font.PLAIN, 18));
 		JtextContact.setColumns(10);
-		JtextContact.setBounds(195, 268, 285, 26);
+		JtextContact.setBounds(205, 270, 285, 26);
 		panel_1_1.add(JtextContact);
 		
 		JtextAddress = new JTextField();
 		JtextAddress.setFont(new Font("Bahnschrift", Font.PLAIN, 18));
 		JtextAddress.setColumns(10);
-		JtextAddress.setBounds(195, 233, 285, 26);
+		JtextAddress.setBounds(205, 233, 285, 26);
 		panel_1_1.add(JtextAddress);
 		
 		JtextIcPassport = new JTextField();
 		JtextIcPassport.setFont(new Font("Bahnschrift", Font.PLAIN, 18));
 		JtextIcPassport.setColumns(10);
-		JtextIcPassport.setBounds(195, 196, 285, 26);
+		JtextIcPassport.setBounds(205, 196, 285, 26);
 		panel_1_1.add(JtextIcPassport);
 		
 		JtextName = new JTextField();
 		JtextName.setFont(new Font("Bahnschrift", Font.PLAIN, 18));
 		JtextName.setColumns(10);
-		JtextName.setBounds(195, 138, 285, 26);
+		JtextName.setBounds(205, 137, 285, 26);
 		panel_1_1.add(JtextName);
 		
 		JtextDate = new JTextField();
 		JtextDate.setFont(new Font("Bahnschrift", Font.PLAIN, 18));
 		JtextDate.setColumns(10);
-		JtextDate.setBounds(195, 80, 285, 26);
+		JtextDate.setBounds(205, 85, 285, 26);
 		panel_1_1.add(JtextDate);
 		
 		JtextRef = new JTextField();
 		JtextRef.setFont(new Font("Bahnschrift", Font.PLAIN, 18));
 		JtextRef.setColumns(10);
-		JtextRef.setBounds(195, 45, 285, 26);
+		JtextRef.setBounds(205, 47, 285, 26);
 		panel_1_1.add(JtextRef);
 		
 		JLabel lblName = new JLabel("Name");
 		lblName.setHorizontalAlignment(SwingConstants.LEFT);
 		lblName.setForeground(new Color(0, 0, 0));
 		lblName.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		lblName.setBounds(31, 135, 154, 27);
+		lblName.setBounds(17, 135, 154, 27);
 		panel_1_1.add(lblName);
 		
 		JLabel lblPassport = new JLabel("IC / Passport No");
 		lblPassport.setHorizontalAlignment(SwingConstants.LEFT);
 		lblPassport.setForeground(new Color(0, 0, 0));
 		lblPassport.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		lblPassport.setBounds(31, 172, 154, 27);
+		lblPassport.setBounds(17, 172, 154, 27);
 		panel_1_1.add(lblPassport);
 		
 		JLabel lblCarModel = new JLabel("Address");
 		lblCarModel.setHorizontalAlignment(SwingConstants.LEFT);
 		lblCarModel.setForeground(new Color(0, 0, 0));
 		lblCarModel.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		lblCarModel.setBounds(31, 230, 140, 27);
+		lblCarModel.setBounds(17, 231, 140, 27);
 		panel_1_1.add(lblCarModel);
 		
 		JLabel lblNewLabel_1_2 = new JLabel("Mobile Num");
 		lblNewLabel_1_2.setHorizontalAlignment(SwingConstants.LEFT);
 		lblNewLabel_1_2.setForeground(new Color(0, 0, 0));
 		lblNewLabel_1_2.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		lblNewLabel_1_2.setBounds(31, 267, 140, 27);
+		lblNewLabel_1_2.setBounds(17, 267, 154, 27);
 		panel_1_1.add(lblNewLabel_1_2);
 		
 		JLabel lblMonthlyInstallments = new JLabel("Yoga Package");
 		lblMonthlyInstallments.setHorizontalAlignment(SwingConstants.LEFT);
 		lblMonthlyInstallments.setForeground(new Color(0, 0, 0));
 		lblMonthlyInstallments.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		lblMonthlyInstallments.setBounds(31, 327, 140, 27);
+		lblMonthlyInstallments.setBounds(17, 327, 154, 27);
 		panel_1_1.add(lblMonthlyInstallments);
 		
 		JLabel lblNewLabel_1_3 = new JLabel("Price (RM)");
 		lblNewLabel_1_3.setHorizontalAlignment(SwingConstants.LEFT);
 		lblNewLabel_1_3.setForeground(new Color(0, 0, 0));
 		lblNewLabel_1_3.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		lblNewLabel_1_3.setBounds(31, 364, 140, 27);
+		lblNewLabel_1_3.setBounds(17, 364, 154, 27);
 		panel_1_1.add(lblNewLabel_1_3);
 		
 		JLabel lblPrice = new JLabel("Weekdays/Weekend");
@@ -214,21 +219,21 @@ public class Main extends JFrame {
 		JLabel lblNewLabel_1_4 = new JLabel("Membership Payment");
 		lblNewLabel_1_4.setForeground(new Color(0, 0, 0));
 		lblNewLabel_1_4.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		lblNewLabel_1_4.setBounds(31, 460, 240, 27);
+		lblNewLabel_1_4.setBounds(20, 456, 186, 27);
 		panel_1_1.add(lblNewLabel_1_4);
 		
 		JComboBox cmbCarModel = new JComboBox();
 		cmbCarModel.setForeground(new Color(0, 0, 0));
 		cmbCarModel.setFont(new Font("Times New Roman", Font.BOLD, 18));
 		cmbCarModel.setModel(new DefaultComboBoxModel(new String[] {"Click here to select", "Stress Relief", "Insomnia", "Obesity", "Back Pain", "Blood Pressure"}));
-		cmbCarModel.setBounds(195, 327, 285, 27);
+		cmbCarModel.setBounds(205, 327, 285, 27);
 		panel_1_1.add(cmbCarModel);
 		
 		JComboBox cmbIcPassport = new JComboBox();
 		cmbIcPassport.setForeground(new Color(0, 0, 0));
 		cmbIcPassport.setFont(new Font("Times New Roman", Font.BOLD, 18));
 		cmbIcPassport.setModel(new DefaultComboBoxModel(new String[] {"Click here to select", "IC ", "Passport"}));
-		cmbIcPassport.setBounds(195, 168, 285, 27);
+		cmbIcPassport.setBounds(205, 172, 285, 27);
 		panel_1_1.add(cmbIcPassport);
 		
 		JPanel panel_1_2 = new JPanel();
@@ -260,13 +265,16 @@ public class Main extends JFrame {
 				cmbIcPassport.getSelectedItem(),
 				
 		});
+				JOptionPane.showMessageDialog(btnNewButton, "Data Was Saved !");
+				
 				if (table.getSelectedRow() == -1){
 					if (table.getRowCount() == 0){
 						JOptionPane.showMessageDialog(null, "Registration is Confirmed", "Customer Registration",
-					JOptionPane.OK_OPTION);
+								JOptionPane.OK_OPTION);
+					
 					}
 				}
-	}
+			}
 
 });
 		btnNewButton.setFont(new Font("Arial Black", Font.BOLD, 18));
@@ -278,6 +286,7 @@ public class Main extends JFrame {
 		btnNewButton_1.setBackground(new Color(176, 224, 230));
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				
 				JtextRef.setText("");
 				JtextDate.setText("");
 				JtextName.setText("");
@@ -289,9 +298,12 @@ public class Main extends JFrame {
 				JtextMI.setText("");
 				cmbCarModel.setSelectedItem("Click here to select");
 				cmbIcPassport.setSelectedItem("Click here to select");
+				JOptionPane.showMessageDialog(btnNewButton_1, "Reset Successfully!");
+				
 				
 			}
 		});
+		
 		btnNewButton_1.setFont(new Font("Arial Black", Font.BOLD, 18));
 		btnNewButton_1.setBounds(557, 11, 202, 47);
 		panel_1_2.add(btnNewButton_1);
@@ -360,7 +372,7 @@ public class Main extends JFrame {
 		panel.add(panel_1_1_1);
 		panel_1_1_1.setLayout(null);
 		panel_1_1_1.setBorder(new MatteBorder(10, 10, 10, 10, (Color) new Color(0, 0, 0)));
-		panel_1_1_1.setBackground(new Color(221, 160, 221));
+		panel_1_1_1.setBackground(new Color(255, 192, 203));
 		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(10, 24, 768, 469);
@@ -372,6 +384,7 @@ public class Main extends JFrame {
 			},
 			new String[] {
 				"M.ship No", "Date", "Name", "IC/Passport", "Address", "Contact No", "Yoga Package", "Price (RM)", "Weekdays/Weekend",  "M.Payment",  
+				
 			}
 		));
 		table.getColumnModel().getColumn(0).setPreferredWidth(47);

@@ -1,5 +1,8 @@
 import java.util.Scanner;
-
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.io.*;
 public class YogaMain {
 
 	public static void main(String[] args) {
@@ -9,7 +12,6 @@ public class YogaMain {
 		System.out.println("Participant address : "+ p.getaddress());
 		
 		StressRelief s = new StressRelief();
-		s.benefits();
 		System.out.println("-Stress Rellief-");
 		System.out.println("The poses and benefits of yoga for Stress Relief : ");
 		System.out.println("\t");
@@ -21,18 +23,15 @@ public class YogaMain {
 		System.out.println("Second pose : " + s.getposes());
 		System.out.println("Balasana is beneficial for your lymphatic system and nervous system. It will calm your mind and release stress. It stretches your thighs, hips and ankles. ");
 		System.out.println("\t");
-		s.setposes("Paschimottanasana (Seated forward bend)");
-		System.out.println("Third pose : " + s.getposes());
-		System.out.println("Paschimottanasana will stretch your spine, hamstring and lower back. Apart from relieving stress, this pose will ease the symptoms of PMS, improves digestion, stimulated liver, reduce fatigue and relieves symptoms of menopause.");
-		System.out.println("\t");
 		s.setposes("Ananda Balasana (Happy baby pose)");
-		System.out.println("Fourth pose : " + s.getposes());
+		System.out.println("Third pose : " + s.getposes());
 		System.out.println("Ananda Balasana will help calm you and get rid of fatigue and stress. It will gently stretch your spine and groin.");
 		System.out.println("\t");
 		s.setposes("Uttanasana (Standing forward bend)");
-		System.out.println("Fifth pose : " + s.getposes());
+		System.out.println("Fourth pose : " + s.getposes());
 		System.out.println("Uttanasana will relieve mild depression and stress. It will calm your brain and stimulate your kidneys and liver.");
-		
+		s.steps();
+		s.health();
 		System.out.println("\t");
 		
 		Obesity obs = new Obesity();
@@ -67,12 +66,35 @@ public class YogaMain {
 		i.setbenefits("Agnistambhasana(Fire Log Pose");
 		System.out.println("Second pose : " + i.getposes());
 		System.out.println("As you actively focus on releasing tension in your hips, your body will respond by releasing tension in other muscle groups, preparing you for a relaxing night’s sleep.");
+		i.health();
+		
 		
 		System.out.println("\t");
 		System.out.println("-Back Pain-");
-		poses backpain = new poses ();
-		backpain.poses();
+		
+		ArrayList al = new ArrayList();
+		Object cloneList;
+		al.add(" Cat-Cow,");
+		al.add(" Downward-Facing-Dog, ");
+		al.add(" Extended Triangle, ");
+		al.add(" Sphinx Pose, ");
+		al.add(" Locust Pose, ");
+		System.out.println("Size of array list:" + al.size());
+		System.out.println("Contents of poses:" +al);
+		
+		al.remove(" Downward-Facing-Dog, ");
+		System.out.println("Size of arraylist after deletion :" + al.size());
+		System.out.println("Contents of poses:" +al);
+		cloneList = al.clone();
+		System.out.println("Elements in the cloned list are: ");
+		System.out.println(cloneList);
+		Object[] objArray = al.toArray();
+		System.out.println("Elements in the arraylist are: ");
+		for(int k=0; k<objArray.length; k++)
+			System.out.println(objArray[k]);
+		poses backpain = new poses();
 		backpain.benefits();
+		
 		
 		
 		

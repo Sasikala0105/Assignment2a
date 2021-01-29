@@ -1,4 +1,5 @@
 
+
 abstract class reducepressure {
 	//Abstract method (does not have a body)
 	public abstract void benefits();
@@ -10,7 +11,8 @@ abstract class reducepressure {
 //Subclass (inherit from reducepressure)
 class posing extends reducepressure { 
 	public void benefits() {
-		System.out.println("Shavasana is the easiest poses which you can try to control your blood pressure numbers and Bhujangasana s helpful in circulating blood and oxygen. This pose also relieves stress and promotes heart health. ");
+		System.out.println("Shavasana is the easiest poses which you can try to control your blood pressure numbers  "
+				+ "Bhujangasana is helpful in circulating blood and oxygen. This pose also relieves stress and promotes heart health. ");
 	}
 }
 
@@ -21,3 +23,4 @@ class posing extends reducepressure {
 	}
 
 }
+
